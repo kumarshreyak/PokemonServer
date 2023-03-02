@@ -27,7 +27,7 @@ public class PokemonController {
 
     @GetMapping("/get/{id}")
     public Pokemon getPokemonById(@PathVariable("id") Integer id) {
-        return pokemonRepository.getPokemonId(id)
+        return pokemonRepository.getPokemonById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Pokemon not found"));
     }
 

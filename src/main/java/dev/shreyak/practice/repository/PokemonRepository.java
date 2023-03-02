@@ -10,7 +10,7 @@ public interface PokemonRepository {
 
     List<Pokemon> getAllPokemon();
 
-    Optional<Pokemon> getPokemonId(Integer id);
+    Optional<Pokemon> getPokemonById(Integer id);
 
     void updatePokemon(Pokemon pokemon);
 

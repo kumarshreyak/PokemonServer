@@ -27,7 +27,7 @@ public class PokemonRepositoryImpl implements PokemonRepository {
     }
 
     @Override
-    public Optional<Pokemon> getPokemonId(Integer id) {
+    public Optional<Pokemon> getPokemonById(Integer id) {
         return pokemonList.stream().filter(p -> p.id().equals(id)).findFirst();
     }
 
