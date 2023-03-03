@@ -2,7 +2,6 @@ package dev.shreyak.practice.repository;
 
 import dev.shreyak.practice.model.Pokemon;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
