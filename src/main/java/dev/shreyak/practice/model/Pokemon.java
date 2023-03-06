@@ -1,10 +1,17 @@
 package dev.shreyak.practice.model;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
 
+@Entity
 public record Pokemon(
-        @NotNull Integer id,
-        @NotBlank String name,
+        @Id
+        @GeneratedValue(strategy = GenerationType.AUTO)
+        Integer id,
+        @NotBlank
+        String name,
         String url
 ) { }

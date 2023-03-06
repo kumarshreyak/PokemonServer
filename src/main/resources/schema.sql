@@ -7,3 +7,4 @@ CREATE TABLE IF NOT EXISTS Pokemon(
 
 INSERT into Pokemon(id, name, url)
 values (1, 'Pikachu', 'pikachu.com')
+
